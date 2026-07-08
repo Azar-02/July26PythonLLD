@@ -144,7 +144,7 @@ print(driver.rating)
 driver.rating = 4.7
 
 print(driver.rating)
-
+print("\nManual Property End")
 # Observation:
 #
 # We did not use:

@@ -87,11 +87,14 @@ driver = DriverV2("Ramesh", 4.8)
 print("\nGetter Example")
 
 print(driver.get_rating())
+print(driver._rating)
+print("Observation:")
 
 # Observation:
 #
 # The actual data is hidden behind
 # a method call.
+# You can still get the value directly like driver._rating, but the getter communicates intent.
 
 # ============================================================
 # ATTEMPT 3 - TRADITIONAL SETTER
@@ -117,10 +120,12 @@ class DriverV3:
 driver = DriverV3("Ramesh", 4.8)
 
 driver.set_rating(4.9)
+print(driver.get_rating())
+driver._rating = -999
+print(driver.get_rating())
 
 print("\nSetter Example")
 
-print(driver.get_rating())
 
 # ============================================================
 # ADDING VALIDATION
@@ -160,12 +165,14 @@ print(driver.get_rating())
 driver.set_rating(-100)
 
 print(driver.get_rating())
+print("\nInvalid Update")
 
 # Observation:
 #
 # Validation now works.
 #
 # Invalid values are rejected.
+# Still able to update it if I access the attribute directly like driver._rating = -999.
 
 # ============================================================
 # THE NEW PROBLEM
@@ -216,7 +223,7 @@ class DriverV5:
     def __init__(self, name, rating):
         self._rating = rating
 
-    @property
+    @property  # Getter 
     def rating(self):
 
         print("Property Getter Invoked")
@@ -228,7 +235,7 @@ driver = DriverV5("Ramesh", 4.8)
 
 print("\n@property Example")
 
-print(driver.rating)
+print(driver._rating)
 
 # Important Observation:
 #
@@ -258,11 +265,11 @@ class DriverV6:
     def __init__(self, name, rating):
         self._rating = rating
 
-    @property
+    @property #Getter
     def rating(self):
         return self._rating
 
-    @rating.setter
+    @rating.setter  # Setter
     def rating(self, value):
 
         print("Property Setter Invoked")
@@ -277,6 +284,7 @@ driver.rating = 4.9
 print("\nSetter Property Example")
 
 print(driver.rating)
+print("\nSetter Property Example End")
 
 # Observation:
 #
@@ -441,7 +449,7 @@ print(driver)
 
 # Uncomment to see validation.
 #
-driver.rating = -100
+#driver.rating = -100
 print(driver)
 
 # ============================================================
