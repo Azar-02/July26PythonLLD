@@ -83,7 +83,7 @@ class Vehicle:
         self.is_available = True
 
     def start(self):
-
+ 
         print(
             f"{self.registration_number} "
             f"starting."
