@@ -1,0 +1,14 @@
+PRD — Mini Library Management System
+1. The library holds Books. Some can be borrowed; some reference items stay in.
+2. Users: Members (borrow/return) and Librarians (manage catalog).
+3. Every user has a unique ID. Track total users.
+4. Books have sub-types: Textbook, Novel.
+5. A Loan tracks who borrowed what. Members have a borrow limit.
+6. You must be able to SEARCH the catalog and LOOP OVER the library.
+
+
+# Entities -> 
+Book: Textbooks, Novels; 
+User : Memebers, Librarians ; 
+Loan ; 
+Library ;
