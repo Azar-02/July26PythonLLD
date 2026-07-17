@@ -1,9 +1,10 @@
 
 
-from abc import abstractmethod
+from abc import ABC, abstractmethod
 
+# ABC (Abstract Base Class) is used to define abstract classes in Python.
 
-class User :
+class User(ABC) :
 
     _id_counter = 0      # class attribute 
     _total_users = 0     # class attribute to keep track of the number of users created
@@ -56,8 +57,10 @@ class Member(User):
         if self._borrowed_count < Member.MAX_BORROW_LIMIT:
             self._borrowed_count += 1
             print(f"{self.name} has borrowed the book: {book}. Total borrowed: {self._borrowed_count}")
+            return True
         else:
             print(f"{self.name} has reached the borrowing limit of {Member.MAX_BORROW_LIMIT} books.")
+            return False
 
     def display_info(self):
         print(f"Member ID: {self.user_id}, Name: {self.name}, Contact: {self.contact}, Borrowed Count: {self._borrowed_count}")
