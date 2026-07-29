@@ -131,7 +131,7 @@ class LoanStatus(Enum):
 loan_status = LoanStatus.ACTIVE
 
 print("\nmember       :", loan_status)          # LoanStatus.ACTIVE
-print("member.value :", .valueloan_status)      # "active"
+print("member.value :", loan_status.value)      # "active"
 
 # =============================================================================
 # RUNTIME OBSERVATION
