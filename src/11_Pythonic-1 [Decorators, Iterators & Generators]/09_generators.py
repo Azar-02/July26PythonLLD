@@ -101,6 +101,15 @@ def countdown(start):
         yield start
         start -= 1
 
+# def trial():
+#     yield 1
+
+# print(trial())
+# print(trial())
+# print(trial().__next__())
+# print(next(trial()))
+# print(next(trial()))
+
 gen = countdown(3)
 
 print("Generator created")
