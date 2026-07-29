@@ -13,10 +13,6 @@ Topics Covered
 4. When to use each
 5. Common interview discussions
 
-This is a classroom teaching script.
-
-The comments are the lecture.
-The executable code is only for demonstration.
 """
 
 from collections import namedtuple, defaultdict
@@ -301,7 +297,7 @@ except AttributeError as e:
 
 words = ["apple", "avocado", "banana"]
 
-groups = {}
+groups = {} # a: "apple" , "avocado", "b: "banana"
 
 for word in words:
     first = word[0]

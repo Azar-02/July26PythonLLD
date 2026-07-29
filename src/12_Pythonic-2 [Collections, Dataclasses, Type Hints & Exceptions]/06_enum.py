@@ -13,8 +13,6 @@ Topics Covered
 5. IntEnum
 6. auto()
 
-The comments are the classroom lecture.
-The executable code demonstrates runtime behaviour.
 """
 
 from enum import Enum, IntEnum, auto
@@ -133,7 +131,7 @@ class LoanStatus(Enum):
 loan_status = LoanStatus.ACTIVE
 
 print("\nmember       :", loan_status)          # LoanStatus.ACTIVE
-print("member.value :", loan_status.value)      # "active"
+print("member.value :", .valueloan_status)      # "active"
 
 # =============================================================================
 # RUNTIME OBSERVATION

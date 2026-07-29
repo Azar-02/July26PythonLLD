@@ -12,8 +12,6 @@ Topics Covered
 4. search()  ->  typed with the Searchable Protocol
 5. Module 1 wrap-up
 
-The comments are the classroom lecture.
-The executable code demonstrates runtime behaviour.
 """
 
 from dataclasses import FrozenInstanceError, dataclass

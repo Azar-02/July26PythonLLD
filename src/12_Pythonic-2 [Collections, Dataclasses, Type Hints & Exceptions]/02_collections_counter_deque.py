@@ -13,8 +13,6 @@ Topics Covered
 4. list vs deque
 5. queue.Queue callback
 
-The comments are the classroom lecture.
-The executable code demonstrates runtime behaviour.
 """
 
 from collections import Counter, deque
