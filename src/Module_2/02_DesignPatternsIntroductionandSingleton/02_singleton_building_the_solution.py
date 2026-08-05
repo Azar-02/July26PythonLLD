@@ -240,6 +240,10 @@ class DBConnectionV2:
         return cls._instance
 
     def __init__(self, url, username, password):
+
+        if hasattr(self, "url"):
+            return
+
         print("__init__ executing")
         self.url = url
         self.username = username
@@ -249,7 +253,7 @@ print("=" * 60)
 print("Singleton V1")
 
 a = DBConnectionV2("db.prod", "admin", "secret")
-b = DBConnectionV2("db.prod", "admin", "secret")
+b = DBConnectionV2("db.prod", "admin11", "secret")
 
 print("a is b :", a is b)
 print(id(a))

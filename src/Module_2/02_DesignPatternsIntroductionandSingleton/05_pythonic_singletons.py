@@ -119,6 +119,7 @@ def singleton(cls):
     return get_instance
 
 @singleton
+# Logger = Singleton(Logger)
 class Logger:
 
     def __init__(self):

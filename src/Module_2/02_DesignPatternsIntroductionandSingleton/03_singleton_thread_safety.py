@@ -248,7 +248,7 @@ class BetterSingleton:
 
     def __new__(cls):
 
-        if cls._instance is None:
+        if cls._instance is None: 
 
             with cls._lock:
 
