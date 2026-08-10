@@ -671,23 +671,6 @@ print(ordered_copy.gpu_type)
 # in that minute.
 
 # ============================================================
-# THINK ABOUT THIS
-# ============================================================
-
-# Why can hostname and IP
-# not be baked into the
-# golden image too?
-#
-# Because they are not
-# knowable in advance.
-#
-# They exist only once
-# the machine is real.
-#
-# A template can only
-# hold what is common.
-
-# ============================================================
 # NAMING THE PATTERN
 # ============================================================
 
